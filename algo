@@ -1,0 +1,28 @@
+ALGORITHM check point
+VAR
+    str :STRING :"the best in the world";
+    count :INTEGER = 0;
+    cont1 :INTEGER = 1;
+    vowels: CHAR : = ["a","e","i","o","u"]
+    count2 :INTEGER = 0;
+BEGIN
+    FOR (int i=0; i<str.lenght();i++)DO 
+    IF (str.charAt[i] !="") THEN
+        count++;
+    END_IF
+    END_FOR
+    Write (count)
+    FOR i in str DO
+        IF (i==" ") THEN
+            count1 +=1;
+        END_IF
+    END_FOR
+    Write(count1)
+    FOR i in str DO
+        IF (i in vowels) THEN
+            count2 +=1;
+        END_IF
+    END_FOR
+    Write(count2)
+END
+
